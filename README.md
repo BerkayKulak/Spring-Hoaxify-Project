@@ -1,1 +1,1 @@
-# Spring-React-Hoaxify-Project
+# Spring-Hoaxify-Project
