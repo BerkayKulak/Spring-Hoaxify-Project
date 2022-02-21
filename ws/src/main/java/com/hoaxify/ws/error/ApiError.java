@@ -11,7 +11,7 @@ public class ApiError {
 	private String message;
 	private String path;
 	private long timestamp = new Date().getTime();
-	private Map<String,String> validationErrrors;
+	private Map<String,String> validationErrors;
 	
 	public ApiError(int status,String message,String path) {
 		this.status = status;
