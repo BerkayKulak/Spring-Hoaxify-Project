@@ -27,7 +27,7 @@ public class UserController {
 			ApiError error = new ApiError(400,"Validation error","/api/1.0/users");
 			Map<String,String> validationErrors = new HashMap<>();
 			validationErrors.put("username", "Username cannot be null");
-			error.setValidationErrrors(validationErrors);
+			error.setValidationErrors(validationErrors);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
 		}
 		userService.save(user);
