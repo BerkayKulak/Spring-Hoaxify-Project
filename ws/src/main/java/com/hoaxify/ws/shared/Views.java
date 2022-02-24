@@ -4,5 +4,5 @@ public interface Views {
 
 	class Base{}
 	
-	class Sensitive extends Basee{}
+	class Sensitive extends Base{}
 }

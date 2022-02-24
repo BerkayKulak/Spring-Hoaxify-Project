@@ -36,6 +36,7 @@ public class User {
 	@NotNull
 	@Size(min = 4,max=255)
 	//@Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]$")
+	@JsonView(Views.Sensitive.class)
 	private String password;
 	
 	@JsonView(Views.Base.class)
