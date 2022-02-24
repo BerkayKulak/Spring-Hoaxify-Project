@@ -21,7 +21,10 @@ public class WsApplication {
 	
 	@Bean
 	CommandLineRunner createInitialUsers(UserService userService) {
-		return (args) => {
+		return new CommandLineRunner() {
+			
+			@Override
+			public void run(String... args) throws Exception {
 				// TODO Auto-generated method stub
 				User user = new User();
 				user.setUsername("user1");
@@ -29,6 +32,7 @@ public class WsApplication {
 				user.setPassword("P4ssword");
 				userService.save(user);
 			}
+		};
 	}
 
 }
